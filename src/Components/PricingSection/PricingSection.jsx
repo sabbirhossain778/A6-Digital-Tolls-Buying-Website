@@ -14,12 +14,12 @@ const PricingSection = () => {
 
                 <div className='w-10/12 mx-auto grid grid-cols-3 gap-7'>
 
-                    <div className="card bg-base-100 shadow-sm">
+                    <div className="card bg-base-200 shadow-md">
                         <div className="card-body space-y-2">
 
                             <div className="">
                                 <h2 className="text-2xl font-bold text-[#101727]">Premium</h2>
-                                <p className='text-[#627382] leading-10'>Perfect for getting started</p>
+                                <p className='text-[#627382] text-[18px] leading-10'>Perfect for getting started</p>
                             </div>
 
                             <div className='flex items-end'>
@@ -51,13 +51,13 @@ const PricingSection = () => {
                         </div>
                     </div>
 
-                    <div id='pricing-active-card' className="card bg-base-100 shadow-sm">
+                    <div id='pricing-active-card' className="card shadow-md">
                         <div className="card-body space-y-2">
 
                             <div className="">
                                 <span className="badge badge-xs badge-warning pricing-badge-gradient">Most Popular</span>
                                 <h2 className="text-2xl font-bold text-white">Pro</h2>
-                                <p className='text-[#ffffffb5] leading-10'>Best for professionals</p>
+                                <p className='text-[#ffffffb5] text-[18px] leading-10'>Best for professionals</p>
                             </div>
 
                             <div className='flex items-end'>
@@ -93,17 +93,17 @@ const PricingSection = () => {
                             </li>
                             </ul>
                             <div className="mt-6">
-                            <button className="btn btn-block font-bold rounded-3xl bg-white"><span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">Get Started Free</span></button>
+                            <button className="btn btn-block font-bold rounded-3xl bg-white"><span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">Start Pro Trial</span></button>
                             </div>
                         </div>
                     </div>
 
-                    <div className="card bg-base-100 shadow-sm">
+                    <div className="card bg-base-200 shadow-md">
                         <div className="card-body space-y-2">
 
                             <div className="">
                                 <h2 className="text-2xl font-bold text-[#101727]">Enterprise</h2>
-                                <p className='text-[#627382] leading-10'>For teams and businesses</p>
+                                <p className='text-[#627382] text-[18px] leading-10'>For teams and businesses</p>
                             </div>
 
                             <div className='flex items-end'>
@@ -138,12 +138,13 @@ const PricingSection = () => {
                             </li>
                             </ul>
                             <div className="mt-6">
-                            <button className="btn btn-block rounded-3xl bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white">Contact Sales</button>
+                            <button className="btn btn-block rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">Contact Sales</button>
                             </div>
                         </div>
                     </div>
 
                 </div> 
+                
             </div>
         </div>
     );
