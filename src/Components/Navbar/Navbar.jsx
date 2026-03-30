@@ -4,7 +4,7 @@ import { FiShoppingCart } from "react-icons/fi";
 const Navbar = () => {
     return (
         <div className="navbar bg-base-100 shadow-sm ">
-            <div className='flex justify-between w-10/12 max-w-360 mx-auto'>
+            <div className='flex justify-between w-10/12 max-w-360 mx-auto items-center'>
                 <div>
                 <a className={`btn btn-ghost text-2xl font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent`}>DigiTools</a>
                 </div>

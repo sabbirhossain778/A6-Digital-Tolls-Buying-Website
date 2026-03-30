@@ -6,7 +6,7 @@ import Rating from './Rating/Rating';
 const Banner = () => {
     return (
         <>
-        <div className={`flex justify-between items-center gap-14 my-20 w-10/12 max-w-360 mx-auto`}>
+        <div className={`flex justify-between items-center gap-14 py-20 w-12/12 max-w-360 mx-auto px-20`}>
             <div className='space-y-2 flex-1'>
                 <p className="bannerText"><FaRegDotCircle className="text-[#4F39F6]"/>
                 <span className="banner-gradient-text">New: AI-Powered Tools Available</span>
@@ -18,14 +18,14 @@ const Banner = () => {
                 </p>
                 <br />
                 <div className='flex gap-4 '>
-                    <button className={`bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white p-4 rounded-4xl font-bold`}>Explore Products</button>
+                    <button className={`bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white p-4 rounded-4xl font-bold btn btn-soft`}>Explore Products</button>
 
-                    <button className="gradient-border"><img src="/src/assets/Play.png" alt="" /> <span className='banner-gradient-text'>Watch Demo</span></button>
+                    <button className="gradient-border btn btn-soft"><img src="/src/assets/Play.png" alt="" /> <span className='banner-gradient-text'>Watch Demo</span></button>
                 </div>
             </div>
 
             <div className='flex flex-1 justify-end'>
-                <img src="/src/assets/banner.png" className={`w-full max-w-[500px] h-auto object-cover rounded-lg`} alt="Banner Image" />
+                <img src="/src/assets/banner.png" className={`w-full max-w-125 h-auto object-cover rounded-lg shadow-md opacity-100`} alt="Banner Image" />
             </div>
         </div>
 
