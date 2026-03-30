@@ -1,9 +1,11 @@
 import React from 'react';
 
 import { FaRegDotCircle } from "react-icons/fa"
+import Rating from './Rating/Rating';
 
 const Banner = () => {
     return (
+        <>
         <div className={`flex justify-between items-center gap-14 my-20 w-10/12 max-w-360 mx-auto`}>
             <div className='space-y-2 flex-1'>
                 <p className="bannerText"><FaRegDotCircle className="text-[#4F39F6]"/>
@@ -26,6 +28,9 @@ const Banner = () => {
                 <img src="/src/assets/banner.png" className={`w-full max-w-[500px] h-auto object-cover rounded-lg`} alt="Banner Image" />
             </div>
         </div>
+
+        <Rating></Rating>
+        </>
     );
 };
 
