@@ -3,7 +3,7 @@
     font-weight: 600;
 }
 
-
+/* Banner section CSS */
 .bannerText {
     display: flex;
     align-items: center;
@@ -37,9 +37,22 @@
                 padding-box, 
                 linear-gradient(to right, #4F39F6, #9514FA) border-box;
 }
+.btn-style {
+    background: linear-gradient(to right, #4F39F6, #9514FA);
+    color: #ffffff;
+    /* padding: 1rem; */
+    /* padding: 20px 30px; */
+    border-radius: 2rem; 
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
 
-
-
+/* Rating section CSS */
 .rating-h2{
   font-weight: 800;
   font-size: 52px;
@@ -55,9 +68,24 @@
 }
 
 
+/* Main section CSS */
+.custom-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 16px;
+  padding: 12px;
+  color: #BB4D00;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.75rem; 
+  line-height: 1rem;
+}
 
-/* bg-white py-22 text-center sm:shadow rounded-2xl relative space-y-4 */
 
+/* Step section CSS */
 .steps-card {
     background-color: #ffffff;
     border-radius: 1rem;
@@ -69,8 +97,7 @@
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.189);
 }
 
-/* className='bg-gradient-to-r from-[#4F39F6] to-[#9514FA] w-fit py-1 px-2 rounded-full absolute top-5 right-5 text-white' */
-
+/* Pricing CSS */
 .badge-gradient {
     background: linear-gradient(to right, #4F39F6, #9514FA);
     color: white;
@@ -102,7 +129,7 @@
     border: none;
 }
 
-
+/* Footer CSS */
 .footer-text{
     color: #ffffff;
     opacity: 65%;
@@ -112,4 +139,14 @@
     border-top: 1px solid rgba(255, 255, 255, 0.267);
     margin: 24px 0;
     width: 100%;
+}
+
+
+
+
+
+#text{
+    font-size: 16px;
+    color: #627382;
+    font-weight: 500;
 }
