@@ -1,16 +1,23 @@
-# React + Vite
+# DigiTools - Digital Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiTools is a simple and modern web application where users can browse and buy premium digital tools. The main goal of this project was to create a smooth shopping experience with a clean user interface.
 
-Currently, two official plugins are available:
+## 🛠️ Technology I Used
+- **React (Vite)** – For building the user interface.
+- **Tailwind CSS** – For styling and making it look modern.
+- **DaisyUI** – For ready-made UI components like buttons and cards.
+- **React-Toastify** – To show beautiful alerts for every action.
+- **React Icons** – For all the icons used in the project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ 3 Key Features
+1. **Interactive Cart System:** Users can easily add their favorite tools to the cart. It calculates the total price automatically and lets you remove items whenever you want.
+2. **Fully Responsive Layout:** The website works perfectly on mobile, tablet, and desktop. I used a mobile-first approach to make sure the design doesn't break on small screens.
+3. **Smart Conditional UI:** To keep the design clean, certain sections (like the checkout button or extra steps) stay hidden if the cart is empty. Everything updates instantly without reloading the page.
 
-## React Compiler
+## 🚀 How to use
+- Clone the repository.
+- Run `npm install` to get the dependencies.
+- Run `npm run dev` to see it live.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+**Developed by Sabbir Hossain**
