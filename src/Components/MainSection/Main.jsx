@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import Card from './Card/Card';
+import AvailableCard from './AvailableCard/AvailableCard';
 import { Suspense } from 'react';
 import SelectedCards from './SelectedCards/SelectedCards';
-const Main = ({ fetchPromise }) => {
+const Main = ({ fetchPromise, cart, setCart }) => {
     const [selected, setSelected] = useState('products');
+    // console.log(cart,'Main');
     // console.log(selected,'Available');
     
     return (
@@ -15,7 +16,7 @@ const Main = ({ fetchPromise }) => {
                     <div className='flex bg-base-200 px-4 py-2 rounded-4xl shadow-sm gap-2'>
                         <button onClick={() => setSelected('products')} className={`btn btn-soft rounded-4xl font-bold px-6 ${selected ==='products'? 'btn-style' : ''}`}>Products</button>
 
-                        <button onClick={() => setSelected('cart')} className={`btn btn-soft rounded-4xl font-bold px-7 ${selected ==='cart'? 'btn-style' : ''}`}>Cart (2)</button>
+                        <button onClick={() => setSelected('cart')} className={`btn btn-soft rounded-4xl font-bold px-7 ${selected ==='cart'? 'btn-style' : ''}`}>Cart ({cart.length})</button>
                     </div>
                 </div>
 
@@ -24,7 +25,7 @@ const Main = ({ fetchPromise }) => {
                         <span className="loading loading-spinner w-10 h-10 text-primary py-6"></span>
                     </div>}>
 
-                    {selected ==='products'? <Card fetchPromise={fetchPromise} /> : <SelectedCards />} 
+                    {selected ==='products'? <AvailableCard fetchPromise={fetchPromise} cart={cart} setCart={setCart}/> : <SelectedCards cart={cart} setCart={setCart}/>} 
                 </Suspense>
             </div>
 
@@ -33,3 +34,4 @@ const Main = ({ fetchPromise }) => {
 };
 
 export default Main;
+

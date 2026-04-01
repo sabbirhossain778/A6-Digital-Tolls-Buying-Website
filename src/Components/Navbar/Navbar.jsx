@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiShoppingCart } from "react-icons/fi";
 
-const Navbar = () => {
+const Navbar = ({count}) => {
     return (
         <div className="navbar bg-base-100 shadow-sm ">
             <div className='flex justify-between w-10/12 max-w-360 mx-auto items-center'>
@@ -23,7 +23,7 @@ const Navbar = () => {
                         <div className="indicator relative">
                         <FiShoppingCart />
                         <span className="badge badge-sm badge-info indicator-item absolute -top-1 -right-2 text-xs w-4 h-4 flex items-center justify-center rounded-full text-white p-0">
-                            0
+                            {count}
                         </span>
                         </div>
                         <span className="font-semibold text-[#101727]">
