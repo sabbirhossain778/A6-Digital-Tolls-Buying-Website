@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import { IoMdCheckmark } from "react-icons/io";
 
 
@@ -12,15 +12,15 @@ import { IoMdCheckmark } from "react-icons/io";
 // };
 
 const Card = ({ fetchPromise }) => {
-    // console.log(fetchPromise);
     const data = use(fetchPromise);
-    // console.log(data);
-    
+    const [isSelected, setIsSelected] = useState(false);  
+
     return (
-        <div className='grid grid-cols-3 gap-7'>
+        <>
+            <div className='grid grid-cols-3 gap-7'>
         {
             data.map(tool => { 
-            console.log(tool); 
+            // console.log(tool); 
             return (
                 <div className="card bg-base-100 shadow-sm">
                         <div className="card-body space-y-2">
@@ -50,16 +50,19 @@ const Card = ({ fetchPromise }) => {
                             </ul>
 
                             <div>
-                                    <button className="btn btn-block rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">Buy Now</button>
+                                    <button onClick={() => setIsSelected(true)} className={`btn btn-block rounded-3xl text-white ${isSelected? 'bg-green-500' : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'}`}>
+
+                                        {isSelected === true?  
+                                    (<span className="flex items-center justify-center gap-2"><IoMdCheckmark className='text-white text-xl'/>Added to Cart!</span>) : ('Buy Now') }</button>
                             </div>
+                            {/* <IoMdCheckmark className='text-green-600 text-xl'/> */}
                         </div>
-                        <img src="/src/assets/products/" alt="" />
                 </div>
             )
             })
         }
-
-        </div>
+            </div>
+        </>
     );
 };
 

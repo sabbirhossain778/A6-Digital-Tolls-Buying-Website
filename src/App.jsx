@@ -20,9 +20,7 @@ function App() {
     <>
     <Navbar></Navbar>
     <Banner></Banner>
-
-    <Main fetchPromise={fetchPromise}>
-    </Main>
+    <Main fetchPromise={fetchPromise}></Main>
     <StepsSection></StepsSection>
     <PricingSection></PricingSection>
     <Footer></Footer>
