@@ -12,7 +12,7 @@ const PricingSection = () => {
                     <p className='text-[#627382] leading-10'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
                 </div>
 
-                <div className='w-10/12 mx-auto grid grid-cols-3 gap-7'>
+                <div className='w-10/12 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-7'>
 
                     <div className="card bg-base-200 shadow-md">
                         <div className="card-body space-y-2">

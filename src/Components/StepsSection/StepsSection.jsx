@@ -4,12 +4,12 @@ const StepsSection = () => {
     return (
         <div className='w-12/12 max-w-360 mx-auto'>
             <div className=' bg-[#F9FAFC] py-25 space-y-10'>
-                <div className='flex flex-col text-center'>
-                    <h2 className='font-extrabold text-5xl'>Get Started in 3 Steps</h2>
+                <div className='flex flex-col text-center sm:px-3 px-'>
+                    <h2 className='font-extrabold md:text-5xl text-3xl'>Get Started in 3 Steps</h2>
                     <p className='text-[#627382] leading-10'>Start using premium digital tools in minutes, not hours.</p>
                 </div>
 
-                <div className='w-10/12 mx-auto grid grid-cols-3 gap-7'>
+                <div className='w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
 
                     <div className='steps-card space-y-4'>
                         <p className='badge-gradient'>01</p>

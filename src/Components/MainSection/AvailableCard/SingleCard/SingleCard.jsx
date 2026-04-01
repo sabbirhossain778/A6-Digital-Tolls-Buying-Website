@@ -1,13 +1,23 @@
 import React from 'react';
 import { IoMdCheckmark } from "react-icons/io";
 import { TbDisabled } from 'react-icons/tb';
+import { toast } from 'react-toastify'
 
 const SingleCard = ({tool, cart, setCart, isAdded}) => {
-    const handleAdd = () =>{
-        if (!isAdded){
+
+    const handleAdd = () => {
+        if (!isAdded) {
             setCart([...cart, tool]);
+            toast.success(`${tool.name} added to cart!`, {
+                position: "top-right",
+                autoClose: 1500,
+            });
+        } else {
+            toast.warn("This tool is already in your cart!", {
+                position: "top-right",
+            });
         }
-    }
+    };
     
     return (
         <div className="card bg-base-100 shadow-sm">

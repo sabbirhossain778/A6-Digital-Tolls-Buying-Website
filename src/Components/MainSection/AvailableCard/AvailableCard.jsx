@@ -70,11 +70,9 @@ import SingleCard from './SingleCard/SingleCard';
 
 
 const AvailableCard = ({ fetchPromise, cart, setCart }) => {
-    const data = use(fetchPromise);
-    // console.log(cart,'Available Card');
-    
+    const data = use(fetchPromise);    
     return (
-        <div className='grid grid-cols-3 gap-7'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-7'>
             {data.map((tool, index) => {
                const isAdded = cart.some(item => item.name === tool.name);
                return(
