@@ -8,7 +8,7 @@
 
 ## 📸 Preview
 *(প্রজেক্টের একটি সুন্দর স্ক্রিনশট তুলে `public/` বা রুট ডিরেক্টরিতে এই নামে সেভ করে রাখো)*
-![DigiTools Screenshot](./screenshot.png)
+![DigiTools Screenshot](./a6-photo.png)
 
 ---
 
